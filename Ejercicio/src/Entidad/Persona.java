@@ -21,11 +21,11 @@ public class Persona {
 
     public void setEdad(int edad) throws Exception {
 
-        if (edad > 0 && edad <= 100) {
+        if (edad >= 18 && edad <= 100) {
 
             this.edad = edad;
         } else {
-            throw new Exception("Rango de edad mayor a 0 y menor a 100");
+            throw new Exception("Rango de edad: mayor o igual a 18 y menor a 100");
         }
     }
 
@@ -104,7 +104,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "\n Datos  {" + " \n Edad=" + edad + "\n Rut=" + rut + "\n Nombre completo= " + nombre + " " + apellido + '}';
+        return "\n\n Datos  {" + " \n Edad=" + edad + "\n Rut=" + rut + "\n Nombre completo= " + nombre + " " + apellido + '}';
     }
 
 }

@@ -36,6 +36,13 @@ public class Administrativo extends Persona {
         }
     }
 
+//    @Override
+//    public String toString() {
+//        return "\nAdministrativo{" + "areaDeTrabajo=" + areaDeTrabajo + '}';
+//    }
+
+ 
+
    
     
     
