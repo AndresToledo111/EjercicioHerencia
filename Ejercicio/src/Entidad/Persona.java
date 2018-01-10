@@ -34,7 +34,7 @@ public class Persona {
     }
 
     public void setRut(String rut) throws Exception {
-//        if (rut.trim() != "") {
+        if (rut.trim() != "") {
 
             if (rut.length() == 9) {
                 this.rut = rut;
@@ -42,9 +42,9 @@ public class Persona {
             } else {
                 throw new Exception("El largo del rut debe ser de 9");
             }
-//        } else {
-//            throw new Exception("No puede dejar el campo vacio");
-//        }
+        } else {
+            throw new Exception("No puede dejar el campo vacio");
+        }
     }
 
     public String getNombre() {
@@ -86,10 +86,25 @@ public class Persona {
         setApellido(apellido);
 
     }
+      public int calcularSueldo()
+    {
+        int sueldo=10000;
+        int sa= 0;
+        int lo=0;
+        //salud
+        if (sueldo==10000) {
+            sa=sueldo*25/100;
+        }
+        //locomocion
+         if (sueldo==10000) {
+            lo=sueldo*7/100;
+        }
+       return sa+lo;
+    }
 
     @Override
     public String toString() {
-        return "Persona{" + " \n Edad=" + edad + "\n Rut=" + rut + "\n Nombre completo= " + nombre + " " + apellido + '}';
+        return "\n Datos  {" + " \n Edad=" + edad + "\n Rut=" + rut + "\n Nombre completo= " + nombre + " " + apellido + '}';
     }
 
 }

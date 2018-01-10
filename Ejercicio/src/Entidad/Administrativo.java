@@ -25,21 +25,7 @@ public class Administrativo extends Persona {
         return areaDeTrabajo;
     }
     
-    public int calcularSueldo()
-    {
-        int sueldo=10000;
-        int sa= 0;
-        int lo=0;
-        //salud
-        if (sueldo==10000) {
-            sa=sueldo*25/100;
-        }
-        //locomocion
-         if (sueldo==10000) {
-            lo=sueldo*7/100;
-        }
-       return sa+lo;
-    }
+//  
 
     public void setAreaDeTrabajo(String areaDeTrabajo) throws Exception {
         if (areaDeTrabajo.trim() != "") {
